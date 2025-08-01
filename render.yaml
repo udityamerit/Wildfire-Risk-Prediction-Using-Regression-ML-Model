@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: wildfire-prediction
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn wsgi:app
